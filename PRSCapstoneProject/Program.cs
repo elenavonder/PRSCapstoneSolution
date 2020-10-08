@@ -24,7 +24,7 @@ namespace PRSCapstoneProject
                 IsAdmin = true,
                 IsReviewer = true,
             };
-            var usersCtrl = new UsersController(prsconn);
+            var usersCtrl = new UsersController(prsconn); //passing prsconn to UsersController so we can use it
             //var recsAffected = usersCtrl.Insert(user);
             var users = usersCtrl.GetUsers();
             var user1 = usersCtrl.GetUser(7);
